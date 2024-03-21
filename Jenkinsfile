@@ -2,6 +2,9 @@ pipeline {
     agent any
      environment {
         registry = "272212553147.dkr.ecr.us-east-1.amazonaws.com/repodockerrepo"
+          registry = "shyamkumar301996/project-aws"
+    registryCredential = 'docker-id'
+    dockerImage = ''
     }
    
     stages {
